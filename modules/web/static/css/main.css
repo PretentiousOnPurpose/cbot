@@ -1,0 +1,80 @@
+html, body, div, header, p {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 7.5%;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    font-size: 1.75rem;
+    font-family: 'Righteous', cursive;
+    color: #4a3b3b;
+}
+
+
+.card {
+    height: 70%;
+    width: 95%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    height: 10%;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    font-size: 1.25rem;
+    font-family: 'Abel', sans-serif;
+    font-weight: 700;
+    color: #4a3b3b;
+}
+
+.card-content {
+    height: 90%;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    overflow-y: scroll;
+}
+
+button {
+    height: 7.5%;
+    width: 95%;
+    background-image: url("../images/mic.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: transparent;
+}
+
+
+button:focus {
+    outline: none;
+}
