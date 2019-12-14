@@ -8,7 +8,7 @@ function sendVoice(str) {
   xhttp.open("POST", "/voiceCtrl", true);
   xhttp.onreadystatechange = function() {
     if (!(this.readyState == 4 && this.status == 200)) {
-        alert("Server did not respond");
+        // alert("You said: " + str + "\n\n" + "Server did not respond");
     }
   };
   xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -17,6 +17,7 @@ function sendVoice(str) {
 
 
 function startVoice() {
+  var textDisp = document.querySelector("#cmd");
   console.log("Starting Voice Recording...");
   if (window.hasOwnProperty('webkitSpeechRecognition')) {
 
@@ -31,6 +32,7 @@ function startVoice() {
     recognition.onresult = function(e) {
       console.log(typeof(e.results[0][0].transcript));
       // alert(e.results[0][0].transcript);
+      textDisp.innerHTML = e.results[0][0].transcript;
       sendVoice(e.results[0][0].transcript);
       recognition.stop();
     };
@@ -43,4 +45,4 @@ function startVoice() {
 }
     
 
-document.querySelector("button").onclick = startVoice;
+document.querySelector("#mic").onclick = startVoice;

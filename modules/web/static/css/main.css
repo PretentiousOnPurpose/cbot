@@ -37,7 +37,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     overflow: hidden;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .card-header {
@@ -63,9 +63,33 @@ header {
     overflow-y: scroll;
 }
 
-button {
-    height: 7.5%;
+#cmd {
+    height: 3.5%;
     width: 95%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-family: 'Abel', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+#btns {
+    height: 10%;
+    width: 45%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mic {
+    height: 100%;
+    width: 50%;
     background-image: url("../images/mic.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -74,6 +98,16 @@ button {
     border: transparent;
 }
 
+#kb {
+    height: 70%;
+    width: 50%;
+    background-image: url("../images/kb.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: transparent;
+}
 
 button:focus {
     outline: none;
