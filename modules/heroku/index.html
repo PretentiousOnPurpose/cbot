@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+        <title>CBot.</title>
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/main.css">
+    </head>
+    <body>
+
+        <header><p>cbot</p></header>
+        
+        <div class="card">
+            <div class="card-header"><p>Terminal</p></div>
+            <div class="card-content" id="terminal">
+                <p>$: initialising servers...</p>
+                <p>$: cbot ready</p>
+
+
+            </div>
+        </div>
+
+        <button></button>
+        <script src="static/js/fb.js"></script>
+        <script type="text/javascript" src="static/js/index.js"></script>
+        <script>
+            var terminal = document.querySelector("#terminal");
+
+            var config = {
+                apiKey: "AIzaSyCdiQH4snqThRDbvgVtbZ1PZ3pA-UCg2zA",
+                authDomain: "cbot-97335.firebaseapp.com",
+                databaseURL: "https://cbot-97335.firebaseio.com",
+                projectId: "cbot-97335",
+                storageBucket: "cbot-97335.appspot.com",
+                messagingSenderId: "406828103162"
+            };
+            firebase.initializeApp(config);
+            
+            db = firebase.database();
+            
+            db.ref("logs").on("value", function(snapshot) {
+                terminal.innerHTML = snapshot.val();
+            })            
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "b1KgRkWqz0RmrEBK6IJ8kOJva6w=",
+			"path": "cloud.google.com/go/compute/metadata",
+			"revision": "105f0564f8d67e66e7ea5ecc5a6e46dad440aa09",
+			"revisionTime": "2019-01-11T17:53:16Z"
+		},
+		{
+			"checksumSHA1": "deLZBkD2q2GjzsWe7c2F/m7ZuTE=",
+			"path": "github.com/zabawaba99/firego/sync",
+			"revision": "ce3fcf35d5c7d35453fd955280de6b0f95a83793",
+			"revisionTime": "2018-11-23T17:47:52Z"
+		},
+		{
+			"checksumSHA1": "aFpql3G+Nw8zkzfqLWQJNZC8pu0=",
+			"path": "golang.org/x/net/context/ctxhttp",
+			"revision": "915654e7eabcea33ae277abbecf52f0d8b7a9fdc",
+			"revisionTime": "2019-01-10T19:11:31Z"
+		},
+		{
+			"checksumSHA1": "wzFhpKR+jCRyNrx2W9Exf66Wido=",
+			"path": "golang.org/x/oauth2",
+			"revision": "5dab4167f31cbd76b407f1486c86b40748bc5073",
+			"revisionTime": "2019-01-15T08:29:34Z"
+		},
+		{
+			"checksumSHA1": "aizsl78eqx16svvpIAr8noIpvSk=",
+			"path": "golang.org/x/oauth2/google",
+			"revision": "5dab4167f31cbd76b407f1486c86b40748bc5073",
+			"revisionTime": "2019-01-15T08:29:34Z"
+		},
+		{
+			"checksumSHA1": "DMmcJ2yC1hddfBLeijo9nNkARcU=",
+			"path": "golang.org/x/oauth2/internal",
+			"revision": "5dab4167f31cbd76b407f1486c86b40748bc5073",
+			"revisionTime": "2019-01-15T08:29:34Z"
+		},
+		{
+			"checksumSHA1": "huVltYnXdRFDJLgp/ZP9IALzG7g=",
+			"path": "golang.org/x/oauth2/jws",
+			"revision": "5dab4167f31cbd76b407f1486c86b40748bc5073",
+			"revisionTime": "2019-01-15T08:29:34Z"
+		},
+		{
+			"checksumSHA1": "Qyhes/zuLDRC41nI/ko3IyHw8a8=",
+			"path": "golang.org/x/oauth2/jwt",
+			"revision": "5dab4167f31cbd76b407f1486c86b40748bc5073",
+			"revisionTime": "2019-01-15T08:29:34Z"
+		},
+		{
+			"checksumSHA1": "5DN37Z5zjs19gmldkgqNW1H8QbE=",
+			"path": "gopkg.in/zabawaba99/firego.v1",
+			"revision": "ce3fcf35d5c7d35453fd955280de6b0f95a83793",
+			"revisionTime": "2018-11-23T17:47:52Z"
+		}
+	],
+	"rootPath": "github.com/chawat/cbotx"
+}
